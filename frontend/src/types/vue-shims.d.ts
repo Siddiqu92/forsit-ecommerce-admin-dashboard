@@ -1,4 +1,4 @@
-// src/types/vue-shims.d.ts
+
 declare module '*.vue' {
   import { DefineComponent } from 'vue'
   const component: DefineComponent<{}, {}, any>
@@ -6,6 +6,6 @@ declare module '*.vue' {
 }
 
 declare module '../api' {
-  const value: any
-  export default value
+  const api: any
+  export default api
 }

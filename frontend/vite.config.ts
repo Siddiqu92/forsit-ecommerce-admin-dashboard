@@ -12,15 +12,17 @@ export default defineConfig({
     },
   },
   build: {
-    chunkSizeWarningLimit: 500, // Can increase to 1000 if needed
+    chunkSizeWarningLimit: 500,
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
+
             if (id.includes('vue')) return 'vue'
             if (id.includes('element-plus')) return 'element-plus'
             if (id.includes('lodash')) return 'lodash'
-            return 'vendor' // Default vendor chunk
+
+            return 'vendor'
           }
         },
       },

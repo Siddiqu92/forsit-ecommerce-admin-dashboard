@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../pages/Dashboard.vue'
-import Inventory from '../pages/Inventory.vue'
-import AddProduct from '../pages/AddProduct.vue'
+
+
+const Dashboard = () => import('../pages/Dashboard.vue')
+const Inventory = () => import('../pages/Inventory.vue')
+const AddProduct = () => import('../pages/AddProduct.vue')
 
 const routes = [
   {
