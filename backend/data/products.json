@@ -1,0 +1,14 @@
+[
+  { "name": "Phone", "stock": 12, "price": 500 },
+  { "name": "Chair", "stock": 5, "price": 120 },
+  { "name": "Laptop", "stock": 8, "price": 1200 },
+  { "name": "Wireless Earbuds", "stock": 3, "price": 150 },
+  { "name": "Smart Watch", "stock": 0, "price": 250 },
+  { "name": "Electric Kettle", "stock": 18, "price": 60 },
+  { "name": "Standing Desk", "stock": 2, "price": 350 },
+  { "name": "LED Monitor", "stock": 7, "price": 220 },
+  { "name": "Bluetooth Speaker", "stock": 10, "price": 90 },
+  { "name": "Vacuum Cleaner", "stock": 4, "price": 300 },
+  { "name": "Backpack", "stock": 15, "price": 45 },
+  { "name": "Office Lamp", "stock": 6, "price": 35 }
+]
