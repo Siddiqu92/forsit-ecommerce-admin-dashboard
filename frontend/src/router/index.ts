@@ -18,7 +18,7 @@ const routes = [
     path: '/add-product',
     name: 'AddProduct',
     component: AddProduct,
-  }
+  },
 ]
 
 const router = createRouter({

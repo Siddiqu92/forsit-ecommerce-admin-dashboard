@@ -1,5 +1,4 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -13,12 +12,15 @@ export default defineConfig({
     },
   },
   build: {
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500, // Can increase to 1000 if needed
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            return id.toString().split('node_modules/')[1].split('/')[0].toString()
+            if (id.includes('vue')) return 'vue'
+            if (id.includes('element-plus')) return 'element-plus'
+            if (id.includes('lodash')) return 'lodash'
+            return 'vendor' // Default vendor chunk
           }
         },
       },
